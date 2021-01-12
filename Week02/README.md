@@ -17,4 +17,4 @@ Cython
     尽量使用 C++ 自带数据结构。
     通用方法:numpy 使用 view 传递给 C;C 使用openmp 或者Eigen。使用 Map 可以使用类似的 matlab的语法。但是不支持 OpenMP。
     所有内存分配和传递都应该在 python 中完成。临时变量用 C++ 类进行构建。
-Cython只做数据预处理
+注意：Cython只做数据预处理
